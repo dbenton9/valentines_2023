@@ -10,33 +10,61 @@
 
   <body>
     <div class="alert alert-danger" role="alert">
-      Valentines Day is Here <3
+      Valentines Day is Here!
     </div>
     <div class="container">
       <h1>Hello Love!</h1>
+      <div class="modal_1">
       <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Message #1
-      </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Message #1
+        </button>
 
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Happy Valentines day to my favorite human bean... being! 
+                  We're going to go on a little adventure today and this webapp
+                  will be your guide. That's all for now.
+                  <!-- MVP release new clues as time passes in the day -->
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>              
+              </div>
             </div>
-            <div class="modal-body">
-              <p>
-                Happy Valentines day to my favorite human bean... being! 
-                We're going to go on a little adventure today and this webapp
-                will be your guide. That's all for now.
-                <!-- MVP release new clues as time passes in the day -->
-              </p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>              
+          </div>
+        </div>
+      </div>
+      <br>
+      <!-- reveal #2 at 8am -->
+      <div class="modal_2">        
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#secondModal">
+          Message #2
+        </button>
+          
+        <div class="modal fade" id="secondModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  ...
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>              
+              </div>
             </div>
           </div>
         </div>
