@@ -1,3 +1,7 @@
-.modal_2 {
+.unveil_modal {
   display: none;
+}
+
+.time {
+  display: inline;
 }

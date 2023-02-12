@@ -10,14 +10,15 @@
 
   <body>
     <div class="alert alert-danger" role="alert">
-      Valentines Day is Here!
+      Valentines Day is Here! <section class="time"></section>
     </div>
     <div class="container">
       <h1>Hello Love!</h1>
-      <div class="modal_1">
+      <!-- modal1: reveal immediately -->
+      <div id="modal1" class="unveil_modal">
       <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          Message #1
+          Good Morning
         </button>
 
         <!-- Modal -->
@@ -25,7 +26,7 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Good Morning</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -44,17 +45,17 @@
         </div>
       </div>
       <br>
-      <!-- reveal #2 at 8am -->
-      <div class="modal_2">        
+      <!-- modal2: reveal at 8am -->
+      <div id="modal2" class="unveil_modal">        
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#secondModal">
-          Message #2
+          Part 1
         </button>
           
         <div class="modal fade" id="secondModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Coffee</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -69,6 +70,58 @@
           </div>
         </div>
       </div>
+      <br>
+      <!-- modal3: reveal at 8am -->
+      <div id="modal3" class="unveil_modal">        
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#thirdModal">
+          Part 2
+        </button>
+          
+        <div class="modal fade" id="thirdModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Dinner</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  ...
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <!-- modal4: reveal at 8am -->
+      <div id="modal4" class="unveil_modal">        
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#fourthModal">
+          Final Destination
+        </button>
+          
+        <div class="modal fade" id="fourthModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Dessert</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  ...
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
