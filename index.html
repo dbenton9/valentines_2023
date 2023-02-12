@@ -10,7 +10,7 @@
 
   <body>
     <div class="alert alert-danger" role="alert">
-      Valentines Day is Here! <section class="time"></section>
+      Check back on Valentines Day
     </div>
     <div class="container">
       <h1>Hello Love!</h1>
@@ -33,7 +33,8 @@
                 <p>
                   Happy Valentines day to my favorite human bean... being! 
                   We're going to go on a little adventure today and this webapp
-                  will be your guide. That's all for now.
+                  will be your guide. That's all for now. Check back later for more
+                  to be unveiled.
                   <!-- MVP release new clues as time passes in the day -->
                 </p>
               </div>
@@ -51,17 +52,22 @@
           Part 1
         </button>
           
-        <div class="modal fade" id="secondModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="secondModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">Coffee</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
+              <div class="form-floating">
+                <input type="text" class="form-control submitted2" id="floatingInputValue" placeholder="some text" value="Burger King">
+                <label for="floatingInputValue">Where was our first date?</label>
+                <button id="submitted2" class="btn btn-primary submitted">Submit</button>
+              </div>
               <div class="modal-body">
-                <p>
+                <div class="destination2">
                   ...
-                </p>
+                </div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>              
