@@ -5,3 +5,7 @@
 .time {
   display: inline;
 }
+
+.btn-primary{
+  --bs-btn-hover-bg: pink;
+}

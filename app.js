@@ -1,13 +1,13 @@
 $(document).ready(function(){
   const timeReleases = {
     // Good Morning
-    modal1: { time: 0, answer: "true", reward: "address"},
+    modal1: { reveal_hour: 0, answer: "true", reward: "address"},
     // coffee
-    modal2: { time: 8, answer: "true", reward: "address"},
+    modal2: { reveal_hour: 9, answer: "true", reward: "address"},
     // dinner
-    modal3: { time: 16, answer: "true", reward: "address"},
+    modal3: { reveal_hour: 16, answer: "true", reward: "address"},
     // dessert
-    modal4: { time: 17, answer: "true", reward: "address"}
+    modal4: { reveal_hour: 18, answer: "true", reward: "address"}
   }
 
   function setTime() {
@@ -18,8 +18,8 @@ $(document).ready(function(){
     var min = today.getMinutes();
     time = hr+':'+min;
     // !!!!!!!!! Update dd == 14 !!!!!!!!!!!
-    if (dd == 12 && mm == 2) {
-      $(".alert").text("Happy Valentines Day! The time is " + time + ".")
+    if (dd >= 13 && mm == 2) {
+      $(".alert").text("It's Valentines Day! The time is " + time + ".")
       unveil(hr)
     }
   }
@@ -27,9 +27,9 @@ $(document).ready(function(){
   function unveil(hr){
     $(".unveil_modal").each(function(){
       selected_modal = this.id
-      release_time = timeReleases[selected_modal].time
-      if (hr > release_time){
-        this.style.display = "list-item"
+      release_time = timeReleases[selected_modal].reveal_hour
+      if (hr >= release_time){
+        this.style.display = "block"
       }
     })
   }
