@@ -7,7 +7,11 @@ $(document).ready(function(){
     // dinner
     modal3: { reveal_hour: 16, answer: "true", reward: "address"},
     // dessert
-    modal4: { reveal_hour: 18, answer: "true", reward: "address"}
+    modal4: { reveal_hour: 17, answer: "true", reward: "address"},
+    // homeward
+    modal5: { reveal_hour: 20, answer: "true", reward: "address"},
+    // next day
+    modal6: { reveal_hour: 23, answer: "true", reward: "address"}
   }
 
   function setTime() {
@@ -18,17 +22,20 @@ $(document).ready(function(){
     var min = today.getMinutes();
     time = hr+':'+min;
     // !!!!!!!!! Update dd == 14 !!!!!!!!!!!
-    if (dd >= 13 && mm == 2) {
+    if (dd >= 14 && mm == 2) {
       $(".alert").text("It's Valentines Day! The time is " + time + ".")
-      unveil(hr)
+      unveil(dd, hr)
     }
   }
 
-  function unveil(hr){
+  function unveil(dd, hr){
     $(".unveil_modal").each(function(){
       selected_modal = this.id
       release_time = timeReleases[selected_modal].reveal_hour
-      if (hr >= release_time){
+      if (dd == 13, hr >= release_time){
+        this.style.display = "block"
+      }
+      else if (dd > 14) {
         this.style.display = "block"
       }
     })
